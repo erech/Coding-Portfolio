@@ -9,7 +9,7 @@ in order for a more optimized search engine experience.
 ## Webpage
 ![Horiseon Webpage Screenshot](Develop/assets/images/horiseon.png)
 
-URL : Will be updated after deploy
+URL : https://erech.github.io/Horiseon-Webpage/
 
 ## Credits
 Starter Code provided by Xandromus from GitHub

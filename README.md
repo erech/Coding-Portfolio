@@ -7,7 +7,7 @@ It contains a codebase that includes accessibility standards
 in order for a more optimized search engine experience. 
 
 ## Webpage
-![Horiseon Webpage Screenshot](Develop/assets/images/horiseon.png)
+![Horiseon Webpage Screenshot](Develop\assets\images\horiseon.png)
 
 URL : Will be updated after deploy
 

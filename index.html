@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<header>
+<head>
     <meta charset="UTF-8" />
     <!--CSS Ref-->
     <link rel="stylesheet" href="Develop\assets\css\style.css">
     <title>Horiseon</title>
-</header>
+</head>
 
 <body>
-    <div class="header">
-        <!--Header list including hyperlinks-->
-        <h1>Hori<span class="seo">seo</span>n</h1>
-        <div>
-            <ul>
-                <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
-                <li><a href="#online-reputation-management">Online Reputation Management</a></li>
-                <li><a href="#social-media-marketing">Social Media Marketing</a></li>
-            </ul>
-        </div>
-    </div>
+<header class="header">
+    <!--Header list including hyperlinks-->
+    <h1>Hori<span class="seo">seo</span>n</h1>
+    <!--links will navigate to designated ID-->
+    <nav><ul> 
+        <li><a href="#search-engine-optimization">Search Engine Optimization</a></li>
+        <li><a href="#online-reputation-management">Online Reputation Management</a></li>
+        <li><a href="#social-media-marketing">Social Media Marketing</a></li>
+    </ul></nav>
+</header>
+
 
     <!--Main image below header-->
     <main class="meeting">
@@ -30,7 +30,7 @@
     <!--Main contents and its brief descriptions-->
     <main class="content">
         <!--Search engine optimization img & description-->
-        <section class="search-engine-optimization">
+        <section class="search-engine-optimization" id="search-engine-optimization">
             <img src="Develop\assets\images\search-engine-optimization.jpg" id="float-left" /></img>
             <h2>Search Engine Optimization</h2>
             <p>
@@ -39,7 +39,7 @@
         </section>
 
         <!--Online Rep Management img & description-->
-        <section class="online-reputation-management">
+        <section class="online-reputation-management" id="online-reputation-management">
             <img src="Develop\assets\images\online-reputation-management.jpg" id="float-right" /></img>
             <h2>Online Reputation Management</h2>
             <p>
@@ -48,7 +48,7 @@
         </section>
 
         <!--Social Media Marketing img & description-->
-        <section class="social-media-marketing">
+        <section class="social-media-marketing" id="social-media-marketing">
             <img src="Develop\assets\images\social-media-marketing.jpg" id="float-left" /></img>
             <h2>Social Media Marketing</h2>
             <p>
@@ -88,7 +88,7 @@
     </main>
 </body>
 
-<!--Not part of Module appearance but included w/in code just in case
+<!--Not part of Module appearance but included w/in code in case of future alterations.
 <footer class="footer">
     <h2>Made with ❤️️ by Horiseon</h2>
     <p>

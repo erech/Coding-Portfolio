@@ -1,3 +1,12 @@
+/* Root variables for texts colors, borders, and background */
+:root {
+    --dark-text: #222E3F;
+    --dark-border: 4px solid var(--dark-text);
+
+    --light-text: #B5C5D9; 
+    --light-border: 5px solid var(--light-background);
+    --light-background: #B5C5D9;
+}
 /* Universal Selectors: body, lists, and paragraphs */ 
 * {
     box-sizing: border-box;
@@ -5,232 +14,251 @@
     margin: 0;
 }
 body {
-    background-color: #d9dcd6;
+    background-color: #E7E7E7;
+    color: var(--dark-text);
+    font-family: 'Helvetica', 'Garamond', Arial, sans-serif;
+    display: inline-block;
 }
-a {
-    color: #ffffff;
-    text-decoration: none;
-}
+
 p {
-    font-size: 16px;
+    font-size: 20px;
 }
 
-/* HEADER CODES: including header container, font, color, and model properties*/
+/* HEADER CONTAINER*/
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
-
+    padding: 10px 15px 10px 0px;
+    background-color: #38383C;
 }
-
-    /* "Hori" and "n" STYLE:
-    Display indicates that it is according to container properties*/
-.header h1 {
+/* Name container and properties including avatar*/
+.nameBox {
     display: inline-block;
     font-size: 48px;
+    padding: 7px 7px 7px 35px;
+    margin-left: 0px;
+    background-color: var(--light-background);
 }
-    /* "SEO" STYLE: indicates a change in color*/
-.header h1 .seo {
-    color: #d9dcd6;
+.nameBox img {
+    padding: 2px 10px;
+    max-height: 50px;
+    float: left;
 }
 
+
 /* HEADER LIST INCLUDING HYPERLINKS*/
-/* This block suggests the that hyperlinks are at right side of screen*/
+.header a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: 70px;
+    border-bottom: var(--light-border);
+    padding-bottom: 3px;
+    
+}
+/* This block suggests the hyperlinks are on right side of screen*/
 .header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/* Doesn't specify bullet points */
-.header nav ul {
 
-    list-style-type: none;
-} 
 /* Aligns nav list to the right of the container */
 .header nav li {
+    list-style-type: none;
     display: inline-block;
-    float: right;
     margin-left: 25px;
 }
 
 
-/* MAIN GRAPHIC OF MEETING */
-.meeting { /* Graphic container to keep aspect ratio*/
+/* TOP GRAPHIC/BANNER */
+.topGraphicContainer {
     display: flex;
-    max-height: auto;
-    max-width: auto;
     min-inline-size: 800px;
     background-position: center;
     justify-content: center;
     position: relative;
 }
-/* image ratios */
-.meeting img { 
+.topGraphic { 
     max-height: 100%;
     max-width: 100%;
     margin-bottom: 25px;
-    object-fit: contain; /* indicates that image will be contained w/in container parameters */
+    object-fit: contain;
 }
 
-/* Float-left and right will alternate the appearance of each content element */
-#float-left {
-    float: left;
-    margin-right: 25px;
-}
-#float-right {
-    float: right;
-    margin-left: 25px;
-}
-
-/* MAIN CONTENTS ALIGNMENTS AND CONTAINER RATIOS*/
-.content { /* CONTENTS FORMAT */
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
-
-/* Formating of each section, following .content as it's parent */
-.search-engine-optimization,
-.online-reputation-management,
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/* Sets max height of image */
-.search-engine-optimization img,
-.online-reputation-management img,
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* Header formatting of each content element */
-.search-engine-optimization h2,
-.online-reputation-management h2,
-.social-media-marketing h2 {
-    /* Margin indicates spacing between header and paragraph */
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-
-/* BENEFITS BOX: 
-Container is placed on the right with set dimensions,
-including margin that aligns column between right side and contents */
-.benefits {
-    margin-right: 20px; 
+/* Greeting Box */
+.subheader {
+    position: absolute ; /* will stay inside topGraphic */
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--light-background);
     padding: 20px;
-    clear: both;
+    margin-bottom: 20px;
+}
+
+/* Main content labels */
+.contentTitle {
+    justify-content: space-between;
+    float: left;
+    padding-top: 15px ;
+    max-width: 17%;
+    margin-left: 5%;
+
+}
+.contentTitle h3 {
+    text-align: right;
+    font-size: 50px;
+}
+
+#contactMe {
+    margin-top: 20px;
+ /*   background-color: #772014; */
+}
+
+#work {
+    margin-left: 35%;
+    padding-top: 135px;
+} 
+
+/* About Me paragraph with left border */
+.aboutMe {
     float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
-}
-
-/* Section formatting; includes margins between items and text color */
-.benefit-lead, 
-.benefit-brand, 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-/* Image formatting  */
-.benefit-lead img,
-.benefit-brand img,
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-/* Margin indicates spacing between header and image.
-All text is centered. */
-.benefit-lead h3,
-.benefit-brand h3,
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* SEARCH ENGING OPTIMIZATION BOX, IMG, RATIOS */
-
-
-
-
-/* ONLINE REP MANAGEMENT BOX, IMG, RATIOS */
-
-
-
-/* SOCIAL MEDIA MARKETING BOX, IMG, RATIOS */
-
-
-
-
-
-    /* BENEFIT LEAD RATIOS, ALIGNMENTS, IMG */
-
-}
-
-
-
-    /* BENEFIT BRAND RATIOS, ALIGNMENTS, IMG */
-
-
-
-    /* BENEFIT COST RATIOS, ALIGNMENTS, IMG */
-
-
-
-/* FOOTER CODE 
-Not part of Module appearance but included w/in code in case of future alterations.
-Could be added to reset.css
-.footer {
+    width: 75%;
     padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
+    border-left: var(--dark-border);
 }
 
-.footer h2 {
+/* Parent box for cards */
+.parentCard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25%;
+    padding: 0px 30px 30px 30px;
+    width: 75%;
+    height: 80%;
+    float: right;
+    border-left: var(--dark-border);
+}
+
+/* Big main project box */
+.bigCard {
+    display: inline-block;
+    border: var(--light-border);
+    margin-bottom: 12px;
+    width: 100%;
+    position: relative;
+}
+
+.bigCard img {
+    height: 100%;
+    width: 100%;
+}
+/* Title box linked to parent; positioned at bottom left */
+.bigCardTitle {
+    position: absolute;
     font-size: 20px;
+    bottom: 20px;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    width: 25%;
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
-*/
+/* Smaller project cards */
+.smallCard {
+    display: inline-block;
+    margin-top: 5px;
+    border: var(--light-border);
+    height: 150px;
+    width: 50%;
+    position: relative;
+}
+.smallCard img {
+    height: 100%;
+    width: 100%;
+}
+/* Title box linked to parent; positioned at bottom left */
+.projectTitle {
+    position: absolute;
+    font-size: 20px;
+    bottom: 20px;
+    background-color: var(--light-background);
+    color: var(--dark-text);
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+
+/* General subtitle font */
+.bigCardTitle p, 
+.projectTitle p {
+    font-size: 14px;
+}
+/* Hover transition */
+.bigCard:hover,
+.smallCard:hover {
+    opacity: 0.5;
+    transition: 0.15s ease-in-out;
+}
+
+/* Contact List with left border */
+.contactInfo {
+    display: flex;  
+    padding: 35px;
+    width: 75%;
+    margin-top: 30px;
+    border-left: var(--dark-border);
+    justify-content: space-evenly;
+    float: right;
+}
+.contactInfo li{
+    display: inline-block;
+    list-style: none;
+    padding: 25px;
+}
+.contactInfo a {
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: var(--dark-border);
+}
+
+/* Top Graphic is filled and small cards are resized to compensate large device width */
+@media screen and (min-device-width: 1068px) {
+    .topGraphicContainer {
+        background-color: black;
+    }
+    .smallCard {
+        height: 300px;
+        width: 50%;
+    }
+    .contactInfo {
+        font-size: larger;
+        justify-content: center;
+    }
+    .contactInfo li {
+        padding-right: 50px;
+    }
+  } 
+/* Small cards stay the same between 768px and 1024px */
+@media screen and (min-device-width: 768px) and (max-device-width: 1068px) {
+    .smallCard {
+        width: 50%;
+    }
+  } 
+  
+/* Cards are stacked on top of each other between 400px and 768px */
+@media screen and (min-device-width: 400px) and (max-device-width: 768px) {
+    .header nav {
+        padding: 20px;
+    }
+    .smallCard {
+      width: 100%;
+    }
+    .projectTitle {
+        width: 25%;
+    }
+  }
+ 

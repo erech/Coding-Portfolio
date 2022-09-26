@@ -12,7 +12,7 @@ Code uses HTML and CSS.
 
 
 ## Webpage
-![Portfolio Webpage Screenshot](Develop\assets\images\webpage.png)
+![Portfolio Webpage Screenshot](Develop/assets/images/webpage.png)
 
 URL : 
 

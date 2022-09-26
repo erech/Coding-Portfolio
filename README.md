@@ -1,21 +1,22 @@
-# Challenge 1: Horiseon Webpage
+# Challenge 2: Professional Portfolio
 
 ## Description
 
-This webpage is for the marketing agency "Horiseon."
-It contains a codebase that includes accessibility standards 
-in order for a more optimized search engine experience. 
+This webpage features my coding portfolio. 
+
+It contains a codebase that focuses on the usage of CSS flex boxes
+
+and includes accessibility standards in order for a more optimized search engine experience. 
+
 
 Code uses HTML and CSS. 
 
 
 ## Webpage
-![Horiseon Webpage Screenshot](Develop/assets/images/horiseon.png)
+![Portfolio Webpage Screenshot](Develop\assets\images\webpage.png)
 
-URL : https://erech.github.io/Horiseon-Webpage/
+URL : 
 
-## Credits
-Starter Code provided by Xandromus from GitHub
 
 ## License 
 
